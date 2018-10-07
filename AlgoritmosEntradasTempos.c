@@ -1,3 +1,12 @@
+//MATERIA: PROJETO DE ALGORITMO
+//UNIVERSIDADE FEDERAL DE VIÇOSA CAMPUS DE RIO PARANAÍBA 
+//ALUNOS : Rodrigo de Oliveira Costa , Kleiber de Carvalho Ferreira.
+/*"trabalho contem osseguintes algortimos de ordenação implementados  
+2 - selec_sort  3 - insertion_sort 
+4 - bubble_sort 5 - shell_sort 6 - merge_sort:  
+7 - quick_sort (ELEMENTO DO MEIO) 8 - quick_sort (por mediana)  
+9 - heap_Sort" */
+
 #include <dir.h>
 #include <time.h>
 #include <string.h>
@@ -29,10 +38,10 @@ void gravaresultado(float resultado, int tamanho, char *nome,  char *modeloEntra
 
 	int i, numero;	
 	FILE * file;
-	file = fopen("RESULTADOS_TEMPOS_EXCU��O.txt", "a+");
+	file = fopen("RESULTADOS_TEMPOS_EXCUÇÂO.txt", "a+");
 	
 	if (file == NULL){
-			printf("Socorro! O arquivo n�o p�de ser aberto!\n");
+			printf("Socorro! O arquivo não pôde ser aberto!\n");
 	}
 
 	fprintf(file,"\n algoritmo %s \n entrada %s %d\n Tempo(s):%f \n**",nome,modeloEntra,tamanho,resultado);
